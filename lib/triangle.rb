@@ -4,6 +4,7 @@ class Triangle
 
   def initialize(a, b, c)
     @sides = %w(a,b,c).sort
+    puts @sides
     if (@sides[0] + @sides[1] < @sides[2])
       begin
         raise PartnerError
