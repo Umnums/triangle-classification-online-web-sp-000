@@ -19,7 +19,11 @@ class Triangle
 
   def kind
     if @sides[0] == @sides[1] && @sides[0] == @sides[2]
+      :equilateral
+    end
+  end
 
+   
   class TriangleError < StandardError
     def message
       "not a triangle"
