@@ -17,6 +17,7 @@ class Triangle
       end
     end
   end
+  
 
   class TriangleError < StandardError
     def message
@@ -26,4 +27,4 @@ class Triangle
 
 end
 
-this = Triangle.new(3,4,5)
+this = Triangle.new(3,4,8)
