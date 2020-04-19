@@ -9,7 +9,7 @@ class Triangle
     @sides << c
     @sides = @sides.sort
     if (@sides[0] + @sides[1] < @sides[2]) || @sides.include?(0)
-      
+
       raise TriangleError
       # rescue TriangleError => error
       #   puts error.message
