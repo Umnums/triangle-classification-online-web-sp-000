@@ -36,4 +36,4 @@ class Triangle
 
 end
 
-this = Triangle.new(0,4,8)
+#this = Triangle.new(0,4,8)
