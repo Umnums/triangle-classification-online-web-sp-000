@@ -17,6 +17,8 @@ class Triangle
     end
   end
 
+  def kind
+    if @sides[0] == @sides[1] && @sides[0] == @sides[2]
 
   class TriangleError < StandardError
     def message
