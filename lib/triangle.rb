@@ -5,7 +5,7 @@ class Triangle
   def initialize(a, b, c)
     @sides = []
     @sides << a
-    @sides << b 
+    @sides << b
     @sides << c
     @sides.sort
     print @sides
