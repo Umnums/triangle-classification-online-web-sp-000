@@ -11,8 +11,8 @@ class Triangle
     print @sides
     if (@sides[0] + @sides[1] < @sides[2])
       begin
-        raise PartnerError
-      rescue PartnerError => error
+        raise TriangleError
+      rescue TriangleError => error
           puts error.message
       end
     end
