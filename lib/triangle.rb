@@ -4,6 +4,11 @@ class Triangle
   def initialize(a, b, c)
     @sides = %w(a,b,c).sort
     if (@sides[0] + @sides[1] < @sides[2])
+      begin
+        raise PartnerError
+      rescue PartnerError => error
+          puts error.message
+      end
   end
 
   class TriangleError < StandardError
