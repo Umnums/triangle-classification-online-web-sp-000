@@ -3,7 +3,11 @@ class Triangle
   attr_accessor :kind, :sides
 
   def initialize(a, b, c)
-    @sides = %w(#{a}).sort
+    @sides = []
+    @sides << a
+    @sides << b 
+    @sides << c
+    @sides.sort
     print @sides
     if (@sides[0] + @sides[1] < @sides[2])
       begin
