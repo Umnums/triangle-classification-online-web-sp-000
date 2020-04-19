@@ -11,6 +11,8 @@ class Triangle
     if (@sides[0] + @sides[1] < @sides[2]) || @sides.include?(0)
       begin
         raise TriangleError
+      rescue TriangleError => error
+        puts error.message
       end
     end
   end
