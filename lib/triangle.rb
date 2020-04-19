@@ -3,4 +3,9 @@ class Triangle
   attr_accessor :kind
   def initialize(a, b, c)
   end
+
+  class TriangleError < StandardError
+  # triangle error code
+  end
+
 end
