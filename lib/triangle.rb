@@ -1,6 +1,6 @@
 class Triangle
   # write code here
-  def :kind
+  attr_accessor :kind
 
 
 end
