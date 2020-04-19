@@ -18,3 +18,5 @@ class Triangle
   end
 
 end
+
+this = Triangle.new(3,4,5)
