@@ -20,6 +20,10 @@ class Triangle
   def kind
     if @sides[0] == @sides[1] && @sides[0] == @sides[2]
       :equilateral
+    elsif @sides[0] == @sides[1]
+      :isosceles
+    else
+      :scalene
     end
   end
 
