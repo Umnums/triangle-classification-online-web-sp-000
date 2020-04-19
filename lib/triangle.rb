@@ -7,7 +7,7 @@ class Triangle
     @sides << a
     @sides << b
     @sides << c
-    @sides.sort
+    @sides = @sides.sort
     if (@sides[0] + @sides[1] < @sides[2])
       begin
         raise TriangleError
